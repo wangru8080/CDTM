@@ -21,30 +21,6 @@ from trainer import Trainer
 from tqdm import tqdm
 torch.manual_seed(2024)
 
-# class Config(object):
-#     def __init__(self):
-#         self.pretrain_model_path = '/mnt/disk2/users/wangru/model_file/pretrained_PLM/bert-base-uncased'
-#         self.max_len = 64
-#         self.per_gpu_batch_size = 64
-#         self.num_workers = 10
-#         self.learning_rate = 3e-5
-        # self.gradient_accumulation_steps = 1
-        # self.warmup_proportion = 0.1
-        # self.num_train_epochs = 2
-        # self.max_grad_norm = 1.0
-#         self.num_class = 10
-#         self.eval_step = 100
-#         self.dropout = 0.1
-#         self.train_mode = 'unsupervise'
-#         self.save_model_path = 'save/{}/bsz-{}-lr-{}-dropout-{}/'.format(self.train_mode, self.per_gpu_batch_size, self.learning_rate, self.dropout)
-#         self.seed = 42
-#         self.patience = 2
-
-#         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-#         if not os.path.exists(self.save_model_path):
-#             os.makedirs(self.save_model_path)
-
 class Config(object):
     def __init__(self):
         self.pretrain_model_path = '/mnt/disk2/users/wangru/model_file/pretrained_PLM/bert-base-uncased'
